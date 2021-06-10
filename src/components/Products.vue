@@ -1,0 +1,38 @@
+<template>
+  <div>
+    <ul>
+      <li v-for="(product, index) in products" :key="product + index">
+        <router-link :to="`/products/${product.id}`"><span>{{ product.title }}</span></router-link>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+import axios from 'axios'
+
+export default {
+  name: 'ProductsList',
+  created() {
+    this.getProducts()
+  },
+  data: () => ({
+    products: []
+  }),
+  methods: {
+    getProducts() {
+      axios.get('https://fakestoreapi.com/products')
+        // eslint-disable-next-line no-irregular-whitespace
+        .then(result => {
+          this.products = result.data
+        }).catch(error => {
+          console.log(error);
+        })
+    }
+  }
+}
+</script>
+
+<style>
+
+</style>
