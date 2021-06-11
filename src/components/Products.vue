@@ -1,10 +1,11 @@
 <template>
   <div>
-    <ul>
-      <li v-for="(product, index) in products" :key="product + index">
-        <router-link :to="`/products/${product.id}`"><span>{{ product.title }}</span></router-link>
-      </li>
-    </ul>
+    <b-container>
+      <b-card-group deck v-for="(product, index) in products" :key="product + index">
+        <b-card :title="product.title">
+        </b-card>
+        </b-card-group>
+    </b-container>
   </div>
 </template>
 
