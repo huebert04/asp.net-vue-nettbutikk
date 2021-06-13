@@ -1,21 +1,11 @@
 <template>
-  <section>
-      <b-card-group v-for="(product, index) in products" :key="product + index" class="col-md-5" >
-        <b-card
-          :title="product.title" 
-          :img-src="product.image" img-top
-          img-height="400"
-          img-width="500">
-          
-          <b-card-text>
-            {{product.description}}
-          </b-card-text>
-          <div slot="footer">
-            <b-btn variant="primary" block>Add to Cart</b-btn>
-          </div>
-        </b-card>
-      </b-card-group>
-  </section>
+  <div>
+    <ul v-for="(product, index) in products" :key="product + index">
+      <li>
+        {{product.title}}
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
