@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Comment
     <v-menu top offset-y>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
@@ -18,8 +17,8 @@
           <v-list-item-title>{{ category.title }}</v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-menu> -->
-    
+    </v-menu>
+
     <v-container fluid>
       <v-row dense>
         <v-col v-for="(product, index) in products" :key="product + index" cols="12">
@@ -47,7 +46,8 @@ import axios from 'axios'
 export default {
   name: 'ProductsList',
   created() {
-    this.getProducts()
+    this.getProducts();
+    this.getProductsByCategory(1);
   },
   data: () => ({
     products: [],
@@ -69,28 +69,24 @@ export default {
         })
     },
     getProductsByCategory(id) {
-      let category = "";
       console.log("clicked")
 
-      if(id === 1) {
-        category == "electronics"
-      } else if(id === 2) {
-        category == "men%27s%20clothing"
-      } else if(id === 3) {
-        category == "women%27s%20clothing"
-      } else if(id === 4) {
-        category == "jewelery"
+      if(id == 1) {
+        let string = "electronics";
+        let array = this.products.filter(item => item.category === string);
+        this.products = array;
+      } else if(id == 2) {
+        let string = "men%27s%20clothing";
+        this.products = this.products.filter(item => item.category === string);
+      } else if(id == 3) {
+        let string = "women%27s%20clothing";
+        this.products = this.products.filter(item => item.category === string);
+      } else if(id == 4) {
+        let string = "jewelery";
+        this.products = this.products.filter(item => item.category === string);
       }
 
-      axios.get(`https://fakestoreapi.com/products/category/${category}`)
-        // eslint-disable-next-line no-irregular-whitespace
-        .then(result =>{
-          this.products.splice(0);
-          console.log(this.products)
-          this.products = result.data
-        }).catch(error => {
-          console.log(error);
-        })
+      
     }
   }
 }

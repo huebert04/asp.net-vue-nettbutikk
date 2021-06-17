@@ -3,6 +3,9 @@
       <ul v-if="product">
           <li>
               <img v-bind:src="product.image" height="200px" width="200px"/>
+              <p>{{product.title}}</p>
+              <p>{{product.description}}</p>
+              <p>{{product.category}}</p>
           </li>
       </ul>
   </section>
