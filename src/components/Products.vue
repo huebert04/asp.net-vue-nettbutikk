@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-menu top offset-y>
+    <!--<v-menu top offset-y>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="primary"
@@ -17,7 +17,7 @@
           <v-list-item-title>{{ category.title }}</v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-menu>
+    </v-menu>-->
 
     <v-container fluid>
       <v-row dense>
@@ -47,7 +47,7 @@ export default {
   name: 'ProductsList',
   created() {
     this.getProducts();
-    this.getProductsByCategory(1);
+    //this.getProductsByCategory(1);
   },
   data: () => ({
     products: [],
