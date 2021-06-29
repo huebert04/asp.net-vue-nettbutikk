@@ -45,16 +45,21 @@ Configure the front-end to send request to aspnet api(instead of express)
 
 * Feature: Administrative functionalities in front end
   - Story: CREATE products
-Create a view page for creating of products
-Create a function that can add products
+Create a view page for creating of products.
+Create a function that can add products.
 
   - Story: UPDATE products
-Create a view page for updating of existing products
-Create a function that can update products in database
+Create a view page for updating of existing products.
+Create a function that can update products in database.
 
   - Story: DELETE products
-Create a view page for deletion of products
-Create a function that can delete products in database
+Create a view page for deletion of products.
+Create a function that can delete products in database.
+
+* Feature: Make the front end page look good.
+  - Story: As a user i want the page to look nice
+Make sure that the front-end looks good by using Vuetify or Bootstrap
+
 
 
 
