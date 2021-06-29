@@ -23,7 +23,7 @@ Create a controller method for posting products
 Create contract types for the model (Create/view model)  
 Create a service method for saving the product to a database
 
-  - Story: AS a system I want to UPDATE products  
+  - Story: As a system I want to UPDATE products  
 Create a controller method for putting products  
 Create a contract type for updatemodel  
 Create a service method for updating the product in a database
@@ -43,9 +43,19 @@ Creata a service method for getting a specific product from the database
 Configure the aspnet core api to host js-frontend(vue)   
 Configure the front-end to send request to aspnet api(instead of express)
 
-* Feature: Add Administrative functionalities in the front end
-  - Story: 
-Create a function that can add products 
-Create a function that can edit products
-Create a function that can delete products
+* Feature: Administrative functionalities in front end
+  - Story: CREATE products
+Create a view page for creating of products
+Create a function that can add products
+
+  - Story: UPDATE products
+Create a view page for updating of existing products
+Create a function that can update products in database
+
+  - Story: DELETE products
+Create a view page for deletion of products
+Create a function that can delete products in database
+
+
+
 
