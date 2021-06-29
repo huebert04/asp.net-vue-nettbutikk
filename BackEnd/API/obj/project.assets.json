@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/huebert04/Documents/asp.net-vue-nettbutikk/BackEnd/BackEnd.csproj",
-      "projectName": "BackEnd",
-      "projectPath": "/Users/huebert04/Documents/asp.net-vue-nettbutikk/BackEnd/BackEnd.csproj",
+      "projectUniqueName": "/Users/huebert04/Documents/asp.net-vue-nettbutikk/BackEnd/API/API.csproj",
+      "projectName": "API",
+      "projectPath": "/Users/huebert04/Documents/asp.net-vue-nettbutikk/BackEnd/API/API.csproj",
       "packagesPath": "/Users/huebert04/.nuget/packages/",
-      "outputPath": "/Users/huebert04/Documents/asp.net-vue-nettbutikk/BackEnd/obj/",
+      "outputPath": "/Users/huebert04/Documents/asp.net-vue-nettbutikk/BackEnd/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/huebert04/.nuget/NuGet/NuGet.Config"

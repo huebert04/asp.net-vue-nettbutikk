@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v9oXNpAvo5tkPR8EQyyDdRVwiLbNA3lBnxkUzqlWxD6r+wAZovuCtDHbDRv05IFJ+ueCdfZD9vnFjjn/slofvg==",
+  "dgSpecHash": "lmAPXalXDUZMYgWURJ7GcYF4Flah9TWBBhRR8MIhq+mlG03wxRCHTpRxnsOYpfEMKu2eBp9dA1gcjJGzIluXPg==",
   "success": true,
-  "projectFilePath": "/Users/huebert04/Documents/asp.net-vue-nettbutikk/BackEnd/BackEnd.csproj",
+  "projectFilePath": "/Users/huebert04/Documents/asp.net-vue-nettbutikk/BackEnd/API/API.csproj",
   "expectedPackageFiles": [
     "/Users/huebert04/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/huebert04/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
