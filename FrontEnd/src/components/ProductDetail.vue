@@ -3,9 +3,10 @@
       <ul v-if="product">
           <li>
               <img v-bind:src="product.image" height="200px" width="200px"/>
-              <p>{{product.title}}</p>
+              <p>{{product.productName}}</p>
               <p>{{product.description}}</p>
               <p>{{product.category}}</p>
+              <p>{{product.price}}</p>
           </li>
       </ul>
   </section>
@@ -17,14 +18,15 @@ import axios from 'axios'
 export default {
     name: 'ProductDetail',
     created() {
-        this.getProductDetail(this.$route.params.id)
+        this.getProductDetail(this.$route.params.productID)
     },
     data: () => ({
         product: {}
     }),
     methods: {
         getProductDetail(id) {
-            axios.get(`https://fakestoreapi.com/products/${id}`)
+            console.log(id);
+            axios.get(`https://localhost:5001/api/product/${id}`)
                 .then(result => {
                     this.product = result.data
                 }).catch((error) => {
