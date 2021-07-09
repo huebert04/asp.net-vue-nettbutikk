@@ -13,7 +13,8 @@
 </template>
 
 <script>
-import axios from 'axios'
+
+import ProductService from '../services/ProductService'
 
 export default {
     name: 'ProductDetail',
@@ -25,8 +26,7 @@ export default {
     }),
     methods: {
         getProductDetail(id) {
-            console.log(id);
-            axios.get(`https://localhost:5001/api/product/${id}`)
+            ProductService.getByID(id)
                 .then(result => {
                     this.product = result.data
                 }).catch((error) => {

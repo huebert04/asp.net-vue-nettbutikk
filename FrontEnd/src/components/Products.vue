@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import ProductService from '../services/ProductService'
 
 export default {
   name: 'ProductsList',
@@ -34,7 +34,7 @@ export default {
   }),
   methods: {
     getProducts() {
-      axios.get('https://localhost:5001/api/product')
+      ProductService.getProducts()
         // eslint-disable-next-line no-irregular-whitespace
         .then(result => {
           this.products = result.data
