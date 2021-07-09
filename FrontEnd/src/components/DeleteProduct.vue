@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-card class="mx-auto" max-width="500" tile>
+    <v-card class="mx-auto" max-width="600" tile>
         <v-list rounded>
             <v-subheader>Products</v-subheader>
             <v-list-item-group color="primary" v-model="selectedItem" >

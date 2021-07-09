@@ -1,15 +1,14 @@
 <template>
-  <section>
-      <ul v-if="product">
-          <li>
-              <img v-bind:src="product.image" height="200px" width="200px"/>
-              <p>{{product.productName}}</p>
-              <p>{{product.description}}</p>
-              <p>{{product.category}}</p>
-              <p>{{product.price}}</p>
-          </li>
-      </ul>
-  </section>
+    <v-container>
+        <v-card class="mx-auto" max-width="600" tile>
+            <v-img v-bind:src="product.image" height="300px" width="600px"></v-img>
+            <v-card-title>{{product.productName}}</v-card-title>
+            <v-card-subtitle>Price: ${{product.price}}</v-card-subtitle>
+            <v-card-subtitle>Category: {{product.category}}</v-card-subtitle>
+            <v-card-text>{{product.description}}</v-card-text>
+        </v-card>
+    </v-container>
+  
 </template>
 
 <script>

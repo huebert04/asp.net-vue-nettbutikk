@@ -40,8 +40,8 @@ export default {
         name: 'Vue SPA Nettbutikk',
         clipped: false,
         listItems: [
-          {title: 'Home', path: '/', icon: 'home'},
-          {title: 'Products', path: '/products', icon: 'inventory_2'},
+          //{title: 'Home', path: '/', icon: 'home'},
+          {title: 'Products', path: '/products', icon: 'inventory_2'}
         ],
         admin: [
           {title: 'Add Product', path: '/addProducts', icon: 'add'},
